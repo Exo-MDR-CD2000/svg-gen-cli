@@ -1,7 +1,7 @@
 // main file where to start the server
 
-const CLI = require('./lib/cli'); // this should bring in the CLI class from cli.js
+const LogoGenerator = require('./lib/cli.js'); // this should bring in the CLI class from cli.js
 
-const cli = new CLI(); // this should create a new instance of the CLI class
+const logoGenerator = new LogoGenerator(); // this should create a new instance of the CLI class
 
-cli.generate(); // this should call the generate method on the cli instance
+logoGenerator.generate(); // this should call the generate method on the cli instance
