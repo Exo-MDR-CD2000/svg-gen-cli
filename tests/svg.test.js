@@ -2,7 +2,7 @@
 // the tests in here should check that the svg is generated correctly for the given shapes and letters
 // some template code below. figure out later if this can be repurposed for this assignment
 
-const { generateLogo } = require('./svg');
+const { generateLogo } = require('../lib/svg');
 
 describe('generateLogo', () => {
   test('should generate an SVG logo with the correct shapes and letters', () => {

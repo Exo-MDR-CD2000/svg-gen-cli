@@ -4,7 +4,7 @@
 
 //exaple code below not finished
 
-const { generateShape } = require('./shapes');
+const { generateShape } = require('../lib/shapes');
 
 describe('generateShape', () => {
   test('should generate a square with the correct dimensions', () => {
