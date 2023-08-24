@@ -7,21 +7,23 @@
 const { generateShape } = require('../lib/shapes');
 
 describe('generateShape', () => {
-  test('should generate a square with the correct dimensions', () => {
-    const shape = generateShape('square', 200);
-    expect(shape).toEqual('<rect x="0" y="0" width="200" height="200" />');
+  test('should generate a square with the correct fill color', () => {
+    const shape = generateShape('square', 'red');
+    expect(shape).toEqual('<rect x="0" y="0" width="300" height="200" fill="red" />');
   });
 
-  test('should generate a circle with the correct dimensions', () => {
-    const shape = generateShape('circle', 100);
-    expect(shape).toEqual('<circle cx="100" cy="100" r="100" />');
+  test('should generate a circle with the correct fill color', () => {
+    const shape = generateShape('circle', 'green');
+    expect(shape).toEqual('<circle cx="150" cy="100" r="100" fill="green" />');
   });
 
-  test('should generate a triangle with the correct dimensions', () => {
-    const shape = generateShape('triangle', 200);
-    expect(shape).toEqual('<polygon points="0,200 100,0 200,200" />');
+  test('should generate a triangle with the correct fill color', () => {
+    const shape = generateShape('triangle', 'blue');
+    expect(shape).toEqual('<polygon points="0,200 150,0 300,200" fill="blue" />');
   });
 });
+
+//so code above tests for size of each shape as well as color. It should pass no matter what color is used.
 
 // how about just test if the shapes are generated fro aobve code.
 
